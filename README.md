@@ -1,2 +1,2 @@
 # IGBL-Website
-International GravBall League Website
+Infantry GravBall League Website
