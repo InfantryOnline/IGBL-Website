@@ -13,6 +13,8 @@ namespace IGBLWebsite.Pages
         public News Item { get; set; }
 
         public Users User { get; set; }
+
+        public int CommentCount { get; set; }
     }
 
     public class IndexModel : PageModel
@@ -28,7 +30,11 @@ namespace IGBLWebsite.Pages
 
         public void OnGet()
         {
-            News = context.News.OrderByDescending(x => x.PostDate).Take(10).Select(y => new NewsViewModel { Item = y, User = context.Users.First(z => z.UserPk == y.UserFk) }).ToList();
+            News = context.News.OrderByDescending(x => x.PostDate).Take(10).Select(y => new NewsViewModel {
+                Item = y,
+                User = context.Users.First(z => z.UserPk == y.UserFk),
+                CommentCount = context.NewsComment.Where(z => z.NewsFk == y.NewsPk).Count()
+            }).ToList();
         }
     }
 }
