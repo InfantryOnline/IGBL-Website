@@ -1,2 +1,40 @@
 ﻿@page
 @model IndexModel
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="95%">
+    <tbody>
+        <tr>
+            <td nowrap="" width="105"><img src="Images/soldier.gif" width="102" height="85" border="0" align="top" alt="" style="position:relative; z-index:99;"></td>
+            <td nowrap=""><div class="CenterColumnMajorHeading">League News</div></td>
+        </tr>
+    </tbody>
+</table>
+
+@foreach (var news in Model.News)
+{
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <div class="LeagueNewsSubject" align="left"><img src="Images/Icon_News.gif" width="16" height="16" border="0" alt="League News" align="top">@news.Item.Subject</div>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td width="50%" nowrap="" height="16"><div class="LeagueNewsCopyWrite" align="left"><img src="Images/Icon_DocumentDate.gif" width="16" height="16" border="0" alt="Date Posted" align="top"> @news.Item.PostDate</div></td>
+                <td width="50%" nowrap="" height="16"><div class="LeagueNewsCopyWrite" align="right"><img src="Images/table_space.gif" width="16" height="16" border="0" align="top" alt="">Posted By: <img align="top" src="uploads/@news.User.UserBannerUrl" width="18" height="12" border="0" alt="@news.User.UserId's Banner">&nbsp;@news.User.UserId</div></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="LeagueNewsBody">
+                        @Html.Raw(String.Join("<br/>", news.Item.NewsBody.Split('\n')))
+                    </div>
+                </td>
+            </tr>
+            <tr style="vertical-align: top">
+                <td colspan="2">
+                    <div align="right" class="NavMenuStyle">&nbsp;<a class="NavMenuStyle" href="index.cfm?FuseAction=LeagueNewsComments&amp;News_PK=739">Comments (0)</a>&nbsp;</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}

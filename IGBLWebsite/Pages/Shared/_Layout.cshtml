@@ -11,10 +11,38 @@
         I G B L - Official Website
     </title>
 
+    <link rel="stylesheet" href="~/css/Style.css" />
+
     @RenderSection("Head", required: false)
 </head>
 <body>
-    @RenderBody()
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" summary="" style="background:url('/Images/title.gif') repeat-x 0 0 transparent;">
+        <tbody>
+            <tr>
+                <td><img src="Images/table_space.gif" width="1" height="170" alt=""></td>
+                <td width="100%" nowrap="">
+                    <div class="GreetingStyle">
+                        <img src="Images/table_space.gif" width="180" height="122" alt="">
+
+                        Welcome to the Official IGBL Website.
+
+                        @* TODO: Welcome message for logged in users. *@
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>@RenderBody()</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

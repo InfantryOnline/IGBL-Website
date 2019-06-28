@@ -1,0 +1,1003 @@
+body {
+	background: White;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px;
+	margin-bottom : 0px;
+}
+
+A {
+	text-decoration : none;
+	color : #0000CE;
+}
+
+A:Hover { 
+	text-decoration : none;
+	color: #C8B481;
+ }
+
+ 
+ /* This is for the Player List rows */
+.SquadStandingsTableData1 {
+	background-color : #F0F0F0;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	height :15px;
+	padding : 2px;
+	color : Black;
+}
+
+/* This is for the Player List rows*/
+.SquadStandingsTableData2 {
+	background-color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	height :15px;
+	color : Black;
+	padding : 2px;
+}
+ 
+  TD.MatchResultsdata{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+}
+ 
+ TD.SquadStandingsDivisionName{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 24px;
+	font-style : italic;
+	font-weight : bold;
+	color : #00009C;
+	padding-left : 10px;
+	padding-right : 1px;
+	padding-top : 2px;
+	letter-spacing : 6px;
+}
+ 
+
+ TD.SquadStandingsTableHeader {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bolder;
+	color : #E7EBEF;
+	padding : 2px;
+	text-align : center;
+	background-color : #00319C;
+}
+
+ 
+ .ScheduleRounds {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	text-align : center;
+	font-weight : bold;
+	color : #666666;
+	padding-top : 4px;
+}
+
+ .ScheduleRoundsHeader {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 25px;
+	text-align : center;
+	font-weight : bolder;
+	color : #666666;
+	padding-top : 15px;
+	letter-spacing : 3px;
+	font-style : oblique;
+}
+
+  .ScheduleSquadNames {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	font-weight : bold;
+	padding-top : 12px;
+	padding-bottom : 12px;
+	text-align : center;
+}
+
+TD.ScheduleDate {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : #00009C;
+	padding-left : 30px;
+	padding-right : 6px;
+	padding-bottom : 4px;
+	padding-top : 4px;
+	background-color : #E7EBEF;
+	height : 16px;
+}
+
+TD.PollDate {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : #00009C;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom : 4px;
+	padding-top : 4px;
+	background-color : #E7EBEF;
+	height : 16px;
+}
+
+
+TD.ScheduleLeftColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	border-left : 4px solid #E7EBEF;
+}
+
+TD.ScheduleMiddleColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	text-align : center;
+	vertical-align : middle;
+}
+
+TD.ScheduleRightColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	border-Right : 4px solid #E7EBEF;
+}
+
+TD.ScheduleBottomRow {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	border-Bottom : 4px solid #E7EBEF;
+	border-Left : 4px solid #E7EBEF;
+	border-Right : 4px solid #E7EBEF;
+}
+
+ 
+ TD.ScheduleResultsColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	border-top : 2px solid #E7EBEF;
+	border-Bottom : 4px solid #E7EBEF;
+	border-Left : 4px solid #E7EBEF;
+	border-Right : 4px solid #E7EBEF;
+	text-align : left;
+	vertical-align : middle;
+	padding : 2px;
+}
+ 
+ TD.PredictionDetailLeftColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	border-top : 2px solid #E7EBEF;
+	border-Bottom : 4px solid #E7EBEF;
+	border-Left : 4px solid #E7EBEF;
+	text-align : left;
+	vertical-align : middle;
+	padding : 0px;
+}
+
+ TD.PredictionDetailRightColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	border-top : 2px solid #E7EBEF;
+	border-Bottom : 4px solid #E7EBEF;
+	border-Right : 4px solid #E7EBEF;
+	text-align : left;
+	vertical-align : middle;
+	padding : 0px;
+}
+
+  TD.PlayerProfileDisplayType {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+ 
+ TD.PlayerProfileStatsHeading {
+	background-color : #666666;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	height :18px;
+	color : #E7EBEF;
+	padding: 3px;
+	text-align : center;
+}
+
+
+TD.PlayerProfileStatsRow1 {
+	background-color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : Black;
+	padding: 2px;
+	text-align : right;
+}
+
+TD.PlayerProfileStatsRow2 {
+	background-color : #F0F0F0;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : Black;
+	padding: 2px;
+	text-align : right;
+}
+
+TD.PlayerProfileCareerTotals {
+	background-color :   #666666;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color :White;
+	padding: 3px;
+	text-align : right;
+}
+
+
+A:link.PlayerProfileStatsHeading {
+	text-decoration : underline;
+	color : #E7EBEF;
+}
+
+A:visited.PlayerProfileStatsHeading {
+	text-decoration : underline;
+	color : #E7EBEF;
+}
+
+A:hover.PlayerProfileStatsHeading {
+	text-decoration : none;
+	color : Yellow;
+	cursor : s-resize;
+}
+
+ 
+ TD.PlayerStatsHeading {
+	background-color : #666666;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	height :18px;
+	color : #E7EBEF;
+	padding: 3px;
+	text-align : center;
+}
+
+
+TD.PlayerStatsRow1 {
+	background-color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	padding: 3px;
+}
+
+TD.PlayerStatsRow2 {
+	background-color : #F0F0F0;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	padding: 3px;
+}
+ 
+ 
+/* This is for the Awards Headers */
+TD.AwardsCategoryTitle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 24px;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+	letter-spacing : 2px;
+	text-align : center;
+}
+
+/* This is for the award name */
+TD.AwardsName {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 17px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : #666666;
+	padding-top : 1px;
+	padding-bottom : 4px;
+	text-align : center;
+	background-color : #E7EBEF;
+}
+
+
+/* This is for the award blurb */
+TD.AwardsBlurb {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : #666666;
+	padding-left : 6px;
+	text-align : left;
+	background-color : #E7EBEF;
+	height : 10px;
+}
+
+
+/* This is for the award recipients */
+TD.AwardsRecipients {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : #000000;
+	padding-Top : 5px;
+	padding-bottom : 5px;
+	text-align : center;
+	background-color : #E7EBEF;
+	letter-spacing : 2px;
+}
+
+
+/* This is for the award blurb */
+TD.AwardsRightColumn {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : black;
+	padding-left : 4px;
+	text-align : left;
+	background-color : white;
+	border-bottom : 4px solid #E7EBEF;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+	line-height : 24px;
+}
+
+/* This is for the award recipients */
+TD.AwardsDesc {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 12px;
+	color : #000000;
+	padding-left : 2px;
+	padding-Top : 2px;
+	padding-bottom : 3px;
+	padding-left : 3px;
+	background-color : white;
+	border-bottom : 4px solid #E7EBEF;
+}
+
+
+/* This is for the award recipients */
+TD.AwardsLeftAwardColumn {
+	background-color : white;
+	border-bottom : 4px solid #E7EBEF;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+}
+
+
+/* This is for the Forum Posts Row 1 */
+.ForumPostsAlt1 {
+	background-color :  #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+	padding-left : 4px;
+	padding-right : 2px;
+}
+
+/* This is for the Forum Posts Row 2 */
+.ForumPostsAlt2 {
+	background-color : #F0F0F0;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+	padding-left : 4px;
+	padding-right : 2px;
+}
+
+
+
+/* This is for the Forum Category Titles */
+.ForumCategoryTitle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 17px;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+	letter-spacing : 2px;
+}
+
+/* This is for the Forum Category Titles */
+.ForumTitleStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-variant : normal;
+	font-weight : bold;
+	color : black;
+	letter-spacing : 0px;
+}
+
+/* This is for the Forum Options at the Top */
+.ForumMenuStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+	text-decoration : none;
+}
+
+A:link.ForumMenuStyle {
+	text-decoration : none;
+}
+
+A:hover.ForumMenuStyle {
+	text-decoration : none;
+	color : #C8B481;
+}
+
+/* This is for the Forum Right Columns */
+TD.ForumHomeStatRow {
+	background-color : #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	color : Black;
+	text-align : right;
+}
+
+/* This is for the Forum Right Columns */
+TD.ForumRowCategoriesAlt1 {
+	background-color : #CED0DA;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	color : #00009C;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	letter-spacing : 1px;
+	padding-left : 20px;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	border-bottom : 2px ridge White;
+	border-left : 2px ridge White;
+}
+
+A:link.ForumRowCategories {
+	font-size : 18px;
+	color : #00009C;
+	text-decoration : none;
+}
+A:Hover.ForumRowCategories {
+	font-size : 18px;
+	color : #3163FF;
+	text-decoration : underline;
+}
+A:Visited.ForumRowCategories {
+	color : #00009C;
+	text-decoration : none;
+}
+A:Visited:Hover.ForumRowCategories {
+	color : #00009C;
+	text-decoration : underline;
+}
+
+/* This is for the Forum Right Columns */
+TD.ForumRowCategoriesAlt2 {
+	background-color : #DDDEE5;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	color : #00009C;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	letter-spacing : 1px;
+	padding-left : 20px;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	border-bottom : 2px ridge White;
+	border-left : 2px ridge White;
+}
+
+/* This is for the Forum Left Columns */
+TD.ForumLeftColumnCategories {
+	background-color : #F7FBFF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #0B1248;
+	text-align : center;
+	border-top : 2px ridge White;
+}
+
+/* This is for the Forum Header Titles */
+TD.forumHeader {
+	background-color : #6699CC;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-variant : normal;
+	font-weight : bolder;
+	height :18px;
+	color : #E7EBEF;
+	text-align : center;
+	letter-spacing : 2px;
+}
+
+
+/* This is for the Login Submit Button */
+.Button {
+	background-color : #0031CE;
+	color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	padding-bottom : 1px;
+	padding-left : 10px;
+	padding-right : 4px;
+	height : 26;
+	vertical-align : middle;
+	border : thin outset Silver;
+	border-width : 3;
+	font-size : 12px;
+	font-style : oblique;
+	letter-spacing : 4px;
+	font-variant : small-caps;
+}
+
+/* This is for the top_of_page Greeting */
+.GreetingStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+}
+
+
+/* This is for the Nav MenuHeadings */
+.NavMenuHeaderStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+}
+
+/* This is for the Nav MenuSubHeadings */
+.NavMenuStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #AAAAAA;
+	padding-bottom : 4px;
+	line-height : 16px;
+	text-decoration : none;
+}
+
+/* This is for the Nav MenuSubHeadings */
+A:link.NavMenuStyle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	color : #000000;
+	padding-bottom : 4px;
+	line-height : 16px;
+}
+
+/* This is for the Nav MenuSubHeadings */
+A:visited.NavMenuStyle {
+	color : #000000;
+}
+
+/* This is for the Nav MenuSubHeadings */
+A:hover.NavMenuStyle {
+	color : #C8B481;
+}
+
+/* This is for normal text */
+.NormalText {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : Black;
+	background-color : transparent;
+
+}
+
+
+/* This is for the Right Column Headings */
+.RightColumnHeading {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : Black;
+	letter-spacing : 1px;
+	background-color : #E7EBEF;
+	margin-bottom : 2px;
+	padding-bottom : 4px;
+	text-align : center;
+}
+
+/* This is for the Right Column Copy Body */
+.RightColumnText {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : Black;
+	margin-left : 4px;
+	margin-right : 4px;
+	margin-bottom : 4px;
+	margin-top : 4px;
+}
+
+/* This is for the Right Column Copy Body */
+.CenterColumnMajorHeading {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 44px;
+	font-style : oblique;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #9CCEFF;
+	letter-spacing : 1px;
+}
+
+/* This is for the League News Subject */
+.LeagueNewsSubject {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : Black;
+	padding-left : 6px;
+	padding-bottom : 2px;
+	padding-top : 2px;
+	text-align : left;
+	background-color : #E7EBEF;
+}
+
+/* This is for the League News Subject */
+.LeagueNewsCopyWrite {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : #00009C;
+	padding-left : 30px;
+	padding-right : 6px;
+	padding-bottom : 4px;
+	padding-top : 4px;
+	background-color : #E7EBEF;
+	height : 16px;
+}
+
+/* This is for the League News Body */
+.LeagueNewsBody {
+	font-family : "Courier New", Courier, monospace;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : Black;
+	padding-left : 10px;
+	padding-right : 6px;
+	padding-bottom : 6px;
+	padding-top : 16px;
+	background-color : transparent;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+	border-bottom : 4px solid #E7EBEF;
+}
+
+
+/* This is for the Login Page Table Title Bar */
+.LoginTableTitle {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #666666;
+	padding-left : 4px;
+	padding-right : 0px;
+	padding-bottom : 2px;
+	padding-top : 4px;
+	background-color : #E7EBEF;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+	border-bottom : 0px solid #E7EBEF;
+	border-top : 2px solid #E7EBEF;
+	text-align : center;
+	letter-spacing : 1;
+}
+
+
+/* This is for the Login Page Body */
+.LoginTable {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 14px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #00009C;
+	padding-left : 40px;
+	padding-right : 40px;
+	padding-bottom : 16px;
+	padding-top : 16px;
+	background-color : transparent;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+	border-bottom : 4px solid #E7EBEF;
+	border-top : 4px solid #E7EBEF;
+	text-align : center;
+}
+
+.PollResultsTable {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bolder;
+	color : #00009C;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 8px;
+	padding-top : 8px;
+	background-color : transparent;
+	text-align : center;
+}
+
+/* This is for the Login Submit Button */
+.LoginButton {
+	background-color : #0031CE;
+	color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	padding-bottom : 1px;
+	padding-left : 10px;
+	padding-right : 4px;
+	height : 26;
+	vertical-align : middle;
+	border : thin outset Silver;
+	border-width : 3;
+	font-size : 12px;
+	font-style : oblique;
+	letter-spacing : 4px;
+	background-image : url("Images/Login_Button_Background.gif");
+	font-variant : small-caps;
+}
+
+/* This is for the SignUp Submit Button */
+.SignUpButton {
+	background-color : #0031CE;
+	color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	padding-bottom : 1px;
+	padding-left : 10px;
+	padding-right : 4px;
+	height : 26;
+	vertical-align : middle;
+	border : thin outset Silver;
+	border-width : 3;
+	font-size : 12px;
+	font-style : oblique;
+	letter-spacing : 4px;
+	background-image : url("Images/SignUp_Button_Background.gif");
+	font-variant : small-caps;
+	margin-left : 250px;
+}
+
+
+select.SelectBox {
+	background-color : #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 12px;
+	letter-spacing : 1px;
+	color : #00009C;
+}
+
+input.Logintextbox {
+	background-color : #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 12px;
+	letter-spacing : 1px;
+	color : #00009C;
+}
+
+Textarea.Logintextbox {
+	background-color : #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 12px;
+	letter-spacing : 1px;
+	color : #00009C;
+}
+
+
+/* This is for the Player List Header Titles */
+.PlayerListTableHeader {
+	background-color : #00319C;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-weight : bolder;
+	color : #E7EBEF;
+	padding : 2px;
+	text-align : center;
+}
+
+/* This is for the Player List rows */
+.PlayerListTableData1 {
+	background-color : #F0F0F0;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	height :15px;
+	padding : 2px;
+	color : Black;
+}
+
+/* This is for the Player List rows*/
+.PlayerListTableData2 {
+	background-color : #E7EBEF;
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	height :15px;
+	color : Black;
+	padding : 2px;
+}
+
+
+/* This is for the Player List Header Titles Links */
+A:link.PlayerListTableHeader {
+	text-decoration : underline;
+}
+
+/* This is for the Player List Header Titles Links */
+A:Visited.PlayerListTableHeader {
+	text-decoration : underline;
+}
+
+/* This is for the Player List Header Titles Links */
+A:hover.PlayerListTableHeader {
+	text-decoration : none;
+	color : Yellow;
+	cursor : s-resize;
+}
+
+/* This is for the Sign-up Table */
+.SignUpLeftCol {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : Black;
+	padding-right : 10px;
+	padding-top:6px;
+	padding-bottom:6px;
+	text-align : right;
+	background-color : #E7EBEF;
+}
+
+/* This is for the Sign-up Table */
+.SignUpRightCol {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : Black;
+	padding-left : 10px;
+	padding-bottom : 3px;
+	padding-top : 3px;
+	text-align : left;
+}
+
+input.SignINtextbox {
+	background-color : #E7EBEF;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	font-size : 10px;
+	letter-spacing : 1px;
+	color : #00009C;
+}
+
+/* This is for the Sign-up data Validation Message */
+.SignupValidationMessage {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 9px;
+	font-weight : bolder;
+	color : #CE3100;
+	margin-left : 14px;
+	font-style : normal;
+}
+
+
+/* This is for the Player Profile Heading */
+TD.PlayerProfilePlayerName {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 18px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color : #666666;
+	padding-top : 2px;
+	padding-left : 14px;
+	padding-bottom : 2px;
+	text-align : left;
+	background-color : #E7EBEF;
+}
+
+
+/* This is for the Player Profile Left Column */
+TD.PlayerProfileLeftColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	padding-top : 2px;
+	padding-bottom : 4px;
+	text-align : center;
+	border-bottom : 4px solid #E7EBEF;
+	border-left : 4px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+}
+
+/* This is for the Player Profile Middle Column */
+TD.PlayerProfileMiddleColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	text-align : right;
+	border-bottom : 2px solid #E7EBEF;
+}
+
+/* This is for the Player Profile Right Column */
+TD.PlayerProfileRightColumn {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12px;
+	color : Black;
+	text-align : left;
+	border-bottom : 2px solid #E7EBEF;
+	border-right : 4px solid #E7EBEF;
+	padding-left : 4px;
+	padding-top : 3px;
+	padding-bottom : 3px;
+}
+
+.VoteText {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	color : Black
+}
+
+/* This is the class fonts added from the old page */
+
+	    	A.whitegold:link {text-decoration: none; color: #FFFFFF;}
+	    	A.whitegold:visited {text-decoration: none; color: #FFFFFF;}
+	    	A.whitegold:hover   {text-decoration: none; color: #C8B481;}
+
+	    	A.blackgold:link {text-decoration: none; color: #000000;}
+	    	A.blackgold:visited {text-decoration: none; color: #000000;}
+	    	A.blackgold:hover   {text-decoration: none; color: #C8B481;}
+	    	
+	       	A.greygold:link {text-decoration: none; color: #666666;}
+	    	A.greygold:visited {text-decoration: none; color: #666666;}
+	    	A.greygold:hover   {text-decoration: none; color: #C8B481;}
+
+	       	A.bluegold:link {text-decoration: none; color: #6699CC;}
+	    	A.bluegold:visited {text-decoration: none; color: #6699CC;}
+	    	A.bluegold:hover   {text-decoration: none; color: #C8B481;}
+
