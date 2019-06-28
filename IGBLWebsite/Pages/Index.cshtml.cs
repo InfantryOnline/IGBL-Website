@@ -30,7 +30,7 @@ namespace IGBLWebsite.Pages
 
         public void OnGet()
         {
-            News = context.News.OrderByDescending(x => x.PostDate).Take(10).Select(y => new NewsViewModel {
+            News = context.News.OrderByDescending(x => x.PostDate).Where(x => x.Active).Select(y => new NewsViewModel {
                 Item = y,
                 User = context.Users.First(z => z.UserPk == y.UserFk),
                 CommentCount = context.NewsComment.Where(z => z.NewsFk == y.NewsPk).Count()
