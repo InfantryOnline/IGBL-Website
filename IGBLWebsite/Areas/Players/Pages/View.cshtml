@@ -1,4 +1,302 @@
-﻿@page
+﻿@page "/players/{id:int}"
 @model IGBLWebsite.Areas.Players.Pages.ViewModel
+
 @{
+    Layout = "_Layout";
 }
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="95%">
+    <tbody>
+        <tr>
+            <td nowrap="" width="105"><img src="/images/soldier.gif" align="top" width="102" height="85" border="0" alt=""></td>
+            <td nowrap=""><div class="CenterColumnMajorHeading"> IGBL Player Profile</div></td>
+        </tr>
+
+    </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="1" cellspacing="0" width="95%">
+
+    <tbody>
+        <tr>
+            <td colspan="3" nowrap="" class="PlayerProfilePlayerName">
+                <img src="uploads/@Model.Player.User.UserBannerUrl" width="18" height="12" border="0" align="bottom" alt="@Model.Player.User.UserId's Banner">&nbsp;@Model.Player.User.UserId
+                &nbsp;&nbsp;&nbsp;<a href="/messages/new?uid=@Model.Player.User.UserPk"><img src="Images/pm.png" border="0" align="bottom" alt="Send a Private Message to @Model.Player.User.UserId"></a>
+            </td>
+        </tr>
+
+        @*<tr>
+            <td width="30%" rowspan="16" class="PlayerProfileLeftColumn" valign="top">
+                Current Rank:<br>
+                <b>General of the Army</b>&nbsp;<br>
+                <img src="Images//igbl_ranks/22.gif" border="0" align="top" alt="General of the Army">&nbsp;
+                <br><br>
+
+                Awards Won:<br>
+
+                <img src="Images/SMLAward_JokersCup.gif" border="0" align="top" alt="Season 8 Joker's Cup">&nbsp;
+
+                <img src="Images/SMLAward_AngelsCup.gif" border="0" align="top" alt="Season 9 Angel's Cup">&nbsp;
+
+                <img src="Images/SMLAward_JudgesCup.gif" border="0" align="top" alt="Season 9 Judge's Cup">&nbsp;
+
+                <img src="Images/SMLAward_JokersCup.gif" border="0" align="top" alt="Season 11 Joker's Cup">&nbsp;
+
+                <img src="Images/SMLAward_AngelsCup.gif" border="0" align="top" alt="Season 13 Angel's Cup">&nbsp;
+
+                <img src="Images/SMLAward_JudgesCup.gif" border="0" align="top" alt="Season 13 Judge's Cup">&nbsp;
+
+                <br><br><br>
+
+                League Matches Refereed:<br><b>72</b><br><br><br>
+
+                Current Squad:<br><b><a href="index.cfm?FuseAction=SquadProfile&amp;Squad_PK=78">Godsend</a></b>&nbsp;<br><br><br>
+
+                IGBL Staff Position:<br><b>IGBL Referee</b><br><br>
+
+                Total Forum Posts:<br><b>7950</b><br><br><br>
+                Total Site Visits:<br><b>482</b><br><br><br>
+                Last Website Visit:<br><b>06/25/19 01:44 PM</b>
+            </td>
+
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                First Name:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>Brendon</b>&nbsp;
+            </td>
+
+
+        </tr>
+
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Last Name:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>Kozlowski</b>&nbsp;
+            </td>
+        </tr>
+
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                E-Mail Address:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                &nbsp;
+            </td>
+        </tr>
+
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                AIM:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                MSN:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                ICQ #:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>11622677</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Personal HomePage:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <a href="http://www.mysiteonline.org" target="new"><b>http://www.mysiteonline.org</b></a>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                City:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>Saratoga Springs</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                State/Province:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>New York</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Country:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>United States</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Sex:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>M</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Occupation:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>Web Administrator, web-developer on the side.</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Birthdate:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>December 12, 1980</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr valign="top">
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Personal Quote:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>They say, practice makes perfect.  They also say nobody's perfect.  I don't get it...</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Date Joined IGBL:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+                <b>April 30, 2000</b>&nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" class="PlayerProfileMiddleColumn">
+                Alias History:
+            </td>
+            <td width="60%" class="PlayerProfileRightColumn">
+
+                <b>Season 13: Realm<br></b>
+
+                <b>Season 15: Col. Kitty Hawk <wml><br></wml></b>
+
+                <b>Season 16: Realm<br></b>
+
+                <b>Season 18: Col. Kitty Hawk <wml><br></wml></b>
+
+                <b>Season 18: my alias<br></b>
+
+                <b>Season 19: my alias<br></b>
+
+                <b>Season 19: Realm<br></b>
+
+            </td>
+        </tr>*@
+
+
+    </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="1" width="95%">
+
+    <tbody>
+        <tr>
+            <td colspan="8" class="PlayerProfileDisplayType"><a href="index.cfm?FuseAction=PlayerProfile&amp;User_PK=8&amp;StatType=Cumulative">Cumulative Totals</a></td>
+            <td colspan="10" class="PlayerProfileDisplayType" align="right"><a href="index.cfm?FuseAction=PlayerProfile&amp;User_PK=8&amp;StatType=PerMinute">Per Minute Totals</a></td>
+        </tr>
+
+        <tr>
+            <td class="PlayerProfileStatsHeading">&nbsp;</td>
+            <td class="PlayerProfileStatsHeading">Squad</td>
+            <td class="PlayerProfileStatsHeading">Wins</td>
+            <td class="PlayerProfileStatsHeading">Losses</td>
+            <td class="PlayerProfileStatsHeading">Minutes</td>
+            <td class="PlayerProfileStatsHeading">Kills</td>
+            <td class="PlayerProfileStatsHeading">Deaths</td>
+            <td class="PlayerProfileStatsHeading">Goals</td>
+            <td class="PlayerProfileStatsHeading">Assists</td>
+            <td class="PlayerProfileStatsHeading">Catches</td>
+            <td class="PlayerProfileStatsHeading">Passes</td>
+            <td class="PlayerProfileStatsHeading">Steals</td>
+            <td class="PlayerProfileStatsHeading">Fumbles</td>
+            <td class="PlayerProfileStatsHeading">Saves</td>
+            <td class="PlayerProfileStatsHeading">Pinches</td>
+            <td class="PlayerProfileStatsHeading">Carry Time</td>
+            <td class="PlayerProfileStatsHeading">MVPs</td>
+            <td class="PlayerProfileStatsHeading">Rating</td>
+        </tr>
+
+        @foreach(var statsEntry in Model.Player.SeasonStatEntries)
+        {
+        <tr>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Season.SeasonName</td>
+            <td class="PlayerProfileStatsRow1"><a href="/squads/@statsEntry.Squad.SquadPk">@statsEntry.Squad.SquadName</a></td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Wins</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Losses</td>
+            <td class="PlayerProfileStatsRow1">@(statsEntry.Stats.PlaySeconds/60)</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Kills</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Deaths</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Goals</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Assists</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Catches</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Passes</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Steals</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Fumbles</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Saves</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Pinches</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.CarryTime</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Stats.MatchMvps</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Rating</td>
+        </tr>
+        }
+
+        <tr>
+            <td class="PlayerProfileCareerTotals" colspan="2">Career Totals</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Wins)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Losses)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.PlaySeconds/60)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Kills)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Deaths)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Goals)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Assists)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Catches)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Passes)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Steals)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Fumbles)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Saves)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Pinches)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.CarryTime)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.MatchMvps)</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.CareerRating</td>
+        </tr>
+
+    </tbody>
+</table>
