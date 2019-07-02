@@ -47,6 +47,7 @@ namespace IGBLWebsite.Models
         public virtual DbSet<UserStatistics> UserStatistics { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<WebsiteTraffic> WebsiteTraffic { get; set; }
+        public virtual DbSet<SiteAdmin> SiteAdmin { get; set; }
 
         // Unable to generate entity type for table 'dudektk_igbl1.Award_Results_Individual'. Please see the warning messages.
         // Unable to generate entity type for table 'dudektk_igbl1.Award_Results_Team'. Please see the warning messages.
@@ -1208,6 +1209,20 @@ namespace IGBLWebsite.Models
                 entity.Property(e => e.UserReferer)
                     .HasColumnName("User_Referer")
                     .HasMaxLength(500)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<SiteAdmin>(entity =>
+            {
+                entity.Property(e => e.ConfigId).HasColumnName("Config_ID");
+
+                entity.HasKey(e => e.ConfigId);
+
+                entity.ToTable("Site_Admin", "dudektk_igbl1");
+
+                entity.Property(e => e.ServerSetting)
+                    .HasColumnName("Server_Setting")
+                    .HasMaxLength(50)
                     .IsUnicode(false);
             });
         }

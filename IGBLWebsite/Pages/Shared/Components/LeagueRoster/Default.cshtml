@@ -1,0 +1,27 @@
+﻿@model LeagueRosterViewComponent.LeagueRosterComponentModel
+@{ }
+<table border="0" cellpadding="0" cellspacing="0" width="160">
+    <tbody>
+        <tr>
+            <td width="1" style="background:url('/Images/table_side.gif') repeat-y 0 0 transparent;">
+                <img src="Images/table_side.gif" alt="">
+            </td>
+
+            <td align="left">
+                <div class="RightColumnHeading">IGBL League</div>
+                <div class="RightColumnText">
+                    <b>Rosters: @(Model.IsRosterLocked ? "Locked" : "Unlocked")</b>
+                    <br><b>Aliases: @(Model.AreAliasesLocked ? "Locked" : "Unlocked")</b>
+                    <br><b>League: @Model.SeasonMode</b>
+                </div>
+                <div class="RightColumnText"><br>The IGBL currently has <b>@Model.ActiveUsers</b> active users. With <b>@Model.AssignedUsers</b> currently assigned to a squad.</div>
+            </td>
+            <td width="1" style="background:url('/Images/table_side.gif') repeat-y 0 0 transparent;">
+                <img src="Images/table_side.gif" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td height="5" colspan="4" style="background:url('/Images/table_bottom.gif') repeat-x 0 0 transparent;"><img src="Images/table_bottom.gif" width="5" height="5" alt=""></td>
+        </tr>
+    </tbody>
+</table>

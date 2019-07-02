@@ -209,8 +209,10 @@
                         </tbody>
                     </table>
                 </td>
-                <td valign="top">@RenderBody()</td>
-                <td valign="top"></td>
+                <td valign="top" style="width: 100%;">@RenderBody()</td>
+                <td valign="top">
+                    @await Component.InvokeAsync("LeagueRoster")
+                </td>
             </tr>
         </tbody>
     </table>

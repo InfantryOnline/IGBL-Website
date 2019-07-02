@@ -1,4 +1,79 @@
 ﻿@page
 @model IGBLWebsite.Areas.Players.Pages.IndexModel
 @{
+    Layout = "_Layout";
 }
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="99%">
+    <tbody>
+        <tr>
+            <td nowrap="" width="105"><img src="Images/soldier.gif" align="top" width="102" height="85" border="0" alt=""></td>
+            <td nowrap=""><div class="CenterColumnMajorHeading">IGBL Player List</div></td>
+        </tr>
+    </tbody>
+</table>
+
+<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
+    <tbody>
+        <tr>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=User_ID&amp;SortType=DESC">Player</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=Squad_Name&amp;SortType=DESC">Squad</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=Sort_Order&amp;SortType=DESC">Rank</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=First_Name&amp;SortType=DESC">First Name</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=Last_Name&amp;SortType=DESC">Last Name</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=User_Sex&amp;SortType=DESC">Sex</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=ICQ&amp;SortType=DESC">ICQ</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=Birthdate&amp;SortType=DESC">Age</a>
+            </td>
+            <td nowrap="" class="PlayerListTableHeader">
+                <a class="PlayerListTableHeader" href="index.cfm?FuseAction=PlayerList&amp;Orderby=Birthdate&amp;SortType=DESC">Birthdate</a>
+            </td>
+        </tr>
+
+        @foreach(var player in Model.ActivePlayers)
+        {
+            <tr valign="top">
+                <td class="PlayerListTableData2"><a href="/players/@player.User.UserPk">@player.User.UserId</a></td>
+                <td class="PlayerListTableData2" nowrap="">@player.SquadName</td>
+                <td class="PlayerListTableData2" nowrap="">@player.SquadRank</td>
+                <td class="PlayerListTableData2">@player.User.FirstName</td>
+                <td class="PlayerListTableData2">@player.User.LastName</td>
+                <td class="PlayerListTableData2" align="center">@player.User.UserSex</td>
+                <td class="PlayerListTableData2">@player.User.Icq</td>
+
+                <td class="PlayerListTableData2" align="right">
+                    @if (player.User.Birthdate.HasValue)
+                    {
+                        @* Todo: calculate years *@
+                    }
+                </td>
+                <td class="PlayerListTableData2" align="right">
+                    @if (player.User.Birthdate.HasValue)
+                    {
+                        <text>@player.User.Birthdate.Value.ToLongDateString()</text>
+                    }
+                </td>
+            </tr>
+        }
+
+        <tr>
+            <td colspan="9" class="PlayerProfileDisplayType" align="right">@Model.ActivePlayers.Count IGBL Players Listed</td>
+        </tr>
+
+    </tbody>
+</table>
