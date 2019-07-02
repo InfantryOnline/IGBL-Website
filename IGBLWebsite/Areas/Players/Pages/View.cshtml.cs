@@ -14,7 +14,11 @@ namespace IGBLWebsite.Areas.Players.Pages
         {
             public Users User { get; set; }
 
+            public UserRanks Rank { get; set; }
+
             public List<SeasonStatsEntry> SeasonStatEntries { get; set; } = new List<SeasonStatsEntry>();
+
+            public List<Awards> Awards { get; set; } = new List<Awards>();
 
             public decimal CareerRating
             {
@@ -64,7 +68,6 @@ namespace IGBLWebsite.Areas.Players.Pages
                     var s9 = Stats.Fumbles / 1.45;
                     var s10 = Stats.Saves / 1.2;
 
-                    // TODO: One of those insane queries.
                     return 225.0m * (t1 + t2 + t3 + t4 + t5 + t6 + t7 + t8 + t9 + t10) + 45.0m;
                 }
             }
@@ -85,6 +88,11 @@ namespace IGBLWebsite.Areas.Players.Pages
             {
                 User = context.Users.Find(id)
             };
+
+            if (Player.User.RankTotal.HasValue)
+            {
+                Player.Rank = context.UserRanks.Find(Player.User.RankTotal.Value);
+            }
 
             var allStats = from stats in context.UserStatistics
                            from season in context.Seasons

@@ -8,7 +8,7 @@
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="95%">
     <tbody>
         <tr>
-            <td nowrap="" width="105"><img src="/images/soldier.gif" align="top" width="102" height="85" border="0" alt=""></td>
+            <td nowrap="" width="105"><img src="/Images/soldier.gif" align="top" width="102" height="85" border="0" alt=""></td>
             <td nowrap=""><div class="CenterColumnMajorHeading"> IGBL Player Profile</div></td>
         </tr>
 
@@ -20,16 +20,16 @@
     <tbody>
         <tr>
             <td colspan="3" nowrap="" class="PlayerProfilePlayerName">
-                <img src="uploads/@Model.Player.User.UserBannerUrl" width="18" height="12" border="0" align="bottom" alt="@Model.Player.User.UserId's Banner">&nbsp;@Model.Player.User.UserId
-                &nbsp;&nbsp;&nbsp;<a href="/messages/new?uid=@Model.Player.User.UserPk"><img src="Images/pm.png" border="0" align="bottom" alt="Send a Private Message to @Model.Player.User.UserId"></a>
+                <img src="/uploads/@Model.Player.User.UserBannerUrl" width="18" height="12" border="0" align="bottom" alt="@Model.Player.User.UserId's Banner">&nbsp;@Model.Player.User.UserId
+                &nbsp;&nbsp;&nbsp;<a href="/messages/new?uid=@Model.Player.User.UserPk"><img src="/Images/pm.png" border="0" align="bottom" alt="Send a Private Message to @Model.Player.User.UserId"></a>
             </td>
         </tr>
 
-        @*<tr>
+        <tr>
             <td width="30%" rowspan="16" class="PlayerProfileLeftColumn" valign="top">
                 Current Rank:<br>
-                <b>General of the Army</b>&nbsp;<br>
-                <img src="Images//igbl_ranks/22.gif" border="0" align="top" alt="General of the Army">&nbsp;
+                <b>@Model.Player.Rank.RankName</b>&nbsp;<br>
+                <img src="/Images/@Model.Player.Rank.RankImage" border="0" align="top" alt="@Model.Player.Rank.RankName">&nbsp;
                 <br><br>
 
                 Awards Won:<br>
@@ -219,7 +219,7 @@
                 <b>Season 19: Realm<br></b>
 
             </td>
-        </tr>*@
+        </tr>
 
 
     </tbody>
@@ -274,7 +274,7 @@
             <td class="PlayerProfileStatsRow1">@statsEntry.Stats.Pinches</td>
             <td class="PlayerProfileStatsRow1">@statsEntry.Stats.CarryTime</td>
             <td class="PlayerProfileStatsRow1">@statsEntry.Stats.MatchMvps</td>
-            <td class="PlayerProfileStatsRow1">@statsEntry.Rating</td>
+            <td class="PlayerProfileStatsRow1">@statsEntry.Rating.ToString("0.##")</td>
         </tr>
         }
 
@@ -295,7 +295,7 @@
             <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.Pinches)</td>
             <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.CarryTime)</td>
             <td class="PlayerProfileCareerTotals">@Model.Player.SeasonStatEntries.Sum(y => y.Stats.MatchMvps)</td>
-            <td class="PlayerProfileCareerTotals">@Model.Player.CareerRating</td>
+            <td class="PlayerProfileCareerTotals">@Model.Player.CareerRating.ToString("0.##")</td>
         </tr>
 
     </tbody>
